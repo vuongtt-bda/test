@@ -1,0 +1,149 @@
+{
+    "abi": [
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": false,
+                    "internalType": "uint256",
+                    "name": "sttGiaoDich",
+                    "type": "uint256"
+                }
+            ],
+            "name": "TaoGiaoDichRoi",
+            "type": "event"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addrTaiKhoanNguoiNhan",
+                    "type": "address"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "intSoTien",
+                    "type": "uint256"
+                }
+            ],
+            "name": "TaoGiaoDich",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addrKhoTien",
+                    "type": "address"
+                }
+            ],
+            "name": "ThayDoiKhoTien",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addrKhoTien",
+                    "type": "address"
+                },
+                {
+                    "internalType": "address",
+                    "name": "addrOwner",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "inputs": [],
+            "name": "KhoTien",
+            "outputs": [
+                {
+                    "internalType": "contract IERC20",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "sttGiaoDich",
+                    "type": "uint256"
+                }
+            ],
+            "name": "XemGiaoDich",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "TaiKhoanNguoiGui",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "TaiKhoanNguoiNhan",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "SoTien",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct NganHang.GiaoDich",
+                    "name": "objGiaoDich",
+                    "type": "tuple"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address",
+                    "name": "addrTaiKhoan",
+                    "type": "address"
+                }
+            ],
+            "name": "XemGiaoDichCuaTaiKhoan",
+            "outputs": [
+                {
+                    "components": [
+                        {
+                            "internalType": "address",
+                            "name": "TaiKhoanNguoiGui",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "address",
+                            "name": "TaiKhoanNguoiNhan",
+                            "type": "address"
+                        },
+                        {
+                            "internalType": "uint256",
+                            "name": "SoTien",
+                            "type": "uint256"
+                        }
+                    ],
+                    "internalType": "struct NganHang.GiaoDich[]",
+                    "name": "",
+                    "type": "tuple[]"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+}
